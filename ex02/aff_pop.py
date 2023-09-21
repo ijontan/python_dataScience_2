@@ -23,8 +23,8 @@ def main():
         data = load("population_total.csv")
         if data is None:
             return
-        country1 = "China"
-        country2 = "India"
+        country1 = "Malaysia"
+        country2 = "Singapore"
         years = np.array(data.columns[1:]).astype(int)
         country1_data = data[data["country"] == country1].values[0, 1:]
         country1_data = [getvalue(i) for i in country1_data]
